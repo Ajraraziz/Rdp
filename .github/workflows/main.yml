@@ -16,7 +16,7 @@ jobs:
 
       - name: Create RDP user
         run: |
-          $password = "Test!1234"  # You can randomize this if you want
+          $password = "azizajrar"  # You can randomize this if you want
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
           New-LocalUser -Name "rdpuser" -Password $securePass -AccountNeverExpires
           Add-LocalGroupMember -Group "Administrators" -Member "rdpuser"
